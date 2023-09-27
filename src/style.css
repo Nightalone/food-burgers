@@ -8,12 +8,18 @@ main{
     height: 100vh;
 }
 
+/* --- Início da configuração do menu de navegação --- */
+
 nav{
     height: 4em;
     background-color: #0099ff;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.material-symbols-outlined{
+    margin-right: 6px;
 }
 
 ul{
@@ -33,6 +39,9 @@ a:hover{
 }
 
 /* --- Fim da configuração do menu de navegação --- */
+
+
+/* --- Início da configuração das imagens --- */
 
 section{
     height: 555px;
@@ -118,4 +127,6 @@ section{
     background-position: center;
     background-size: 11em;
 }
+
+/* --- Fim da configuração das imagens --- */
 

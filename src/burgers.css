@@ -1,0 +1,51 @@
+.caixaBurger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 394px;
+}
+
+
+.imgBurger1{
+    width: 20em;
+    height: 20em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.imgBurger2{
+    width: 20em;
+    height: 20em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.imgBurger3{
+    width: 20em;
+    height: 20em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.descriçãoBurger{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rodapeBurger{
+    background-color: #ccc;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

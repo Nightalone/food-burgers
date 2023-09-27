@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Burgers(props){
+function Product(props){
     return(
         <div className='container-img'>
-         <a><div className={props.classN}></div></a>
+          <Link to={props.link}><div className={props.classN}></div></Link>
           <div className='name'>
             <h1>{props.nome}</h1>
           </div>
@@ -11,4 +12,4 @@ function Burgers(props){
     )
 }
 
-export default Burgers;
+export default Product;
