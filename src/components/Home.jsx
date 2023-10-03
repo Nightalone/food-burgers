@@ -26,12 +26,12 @@ function Home(){
       <nav>
         <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
         <div className='container-menu' id='containe-menu' onClick={clickMenu}><span class="material-symbols-outlined menu">menu</span></div>
-        <ul className='limpar' id='itens'>
+        <ul className='limpar1' id='itens'>
           <Link to='/'><li>Burgers</li></Link>
           <Link to='/drinks'><li>Drinks</li></Link>
           <Link to='/desserts'><li>Desserts</li></Link>
         </ul>
-        <div className='container-search limpar' id='searc'>       
+        <div className='container-search limpar2' id='searc'>       
           <input placeholder='Search' type='text' name='text' className='input-search'/>
           <span className="material-symbols-outlined search">search</span>
         </div>      
