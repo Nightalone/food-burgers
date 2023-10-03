@@ -10,16 +10,21 @@ main{
 
 /* --- Início da configuração do menu de navegação --- */
 
+
 nav{
     height: 4em;
     background-color: #0099ff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .material-symbols-outlined{
     margin-right: 6px;
+}
+
+.container-menu{
+    display: none;
 }
 
 ul{
@@ -38,6 +43,25 @@ a:hover{
     color: #fff;
 }
 
+.container-search{
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.input-search, .input-search:focus{
+    border: none;
+    margin-left: 16px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.search{
+    margin-right: 8px;
+}
+
 /* --- Fim da configuração do menu de navegação --- */
 
 
@@ -48,7 +72,7 @@ section{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly;    
 }
 
 .container{
@@ -58,12 +82,78 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 426px) {
+
+    nav{
+        width: 100%;
+        margin-bottom: 38em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 17em;
+
+    }
+
+    .container-menu{
+        background-color: #0099bb;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3em;
+        cursor: pointer;
+    }
+
+    .container-menu:hover{
+        background-color: #000;
+        color: #FFF;
+    }
+
+    ul{
+        width: 100%;
+        height: 6em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .limpar1{
+        display: none;
+    }
+
+    .limpar2{
+        display: none;
+    }
+
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        margin: 2em 0 2em 0;
+        height: 48em; 
+    }
+
+    .container-img{
+        width: 50em;
+        margin-bottom: 4em;
+        width: 90%;
+    }
 }
 
 .container-img{
     border-radius: 8px;
-    width: 12em;
-    height: 12em;
+    width: 13em;
+    height: 13em;
     box-shadow: 0 0 12px #363636;
     border-radius: 4px;
     text-align: center;
@@ -75,16 +165,20 @@ section{
 }
 
 .img1{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 9em;
+}
+
+.img1:hover{
     background-size: 10em;
 }
 
 .img2{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br'); 
     background-repeat: no-repeat;
@@ -92,8 +186,12 @@ section{
     background-size: 12em;
 }
 
+.img2:hover{
+    background-size: 13em;
+}
+
 .img3{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
     background-repeat: no-repeat;
@@ -101,8 +199,12 @@ section{
     background-size: 11em;
 }
 
+.img3:hover{
+    background-size: 12em;
+}
+
 .img4{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br'); 
     background-repeat: no-repeat;
@@ -110,8 +212,12 @@ section{
     background-size: 8em;
 }
 
+.img4:hover{
+    background-size: 9em;
+}
+
 .img5{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br'); 
     background-repeat: no-repeat;
@@ -119,13 +225,33 @@ section{
     background-size: 10em;
 }
 
+.img5:hover{
+    background-size: 11em;
+}
+
 .img6{
-    width: 12em;
+    width: 100%;
     height: 8em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: 11em;
+}
+
+.img6:hover{
+    background-size: 12em;
+}
+
+.price{
+    margin-top: 4px;
+}
+
+.car{
+    margin-top: 4px;
+}
+
+.car:hover{
+    color: #00ff44;
 }
 
 /* --- Fim da configuração das imagens --- */

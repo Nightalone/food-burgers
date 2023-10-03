@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Cheeseburger(){
     return(
-        <main>
+      <main>
         <nav>
           <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
           <ul>
