@@ -1,4 +1,4 @@
-.caixaBurger{
+.caixaJuice{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,61 +7,61 @@
 }
 
 
-.imgBurger1{
+.imgJuice1{
     width: 19em;
     height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br');
-    background-position: center;
-    background-size: 18em;
-    background-repeat: no-repeat;
-}
-
-.imgBurger2{
-    width: 19em;
-    height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br');
-    background-position: center;
-    background-size: 20em;
-    background-repeat: no-repeat;
-}
-
-.imgBurger3{
-    width: 19em;
-    height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br');
-    background-position: center;
-    background-size: 18em;
-    background-repeat: no-repeat;
-}
-
-.imgBurger4{
-    width: 19em;
-    height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br');
-    background-position: center;
-    background-size: 17em;
-    background-repeat: no-repeat;
-}
-
-.imgBurger5{
-    width: 19em;
-    height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br');
+    background-image: url('https://static.expressodelivery.com.br/imagens/produtos/106113/180/Expresso-Delivery_0d51e0b279d6344055315a11e8fae7c7.png');
     background-position: center;
     background-size: 19em;
     background-repeat: no-repeat;
 }
 
-.imgBurger6{
+.imgJuice2{
     width: 19em;
     height: 19em;
-    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br');
+    background-image: url('https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/c65526b6-458d-4cb5-9550-6d6a4f098846/da1e9ff7-945d-487d-b91d-688bc1cb8a45.jpg');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.imgJuice3{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://atm-accounts.s3-sa-east-1.amazonaws.com/54/files/thumbs/svorpceozu7ekv8n6atp-large.jpeg');
     background-position: center;
     background-size: 18em;
     background-repeat: no-repeat;
 }
 
-.descriçãoBurger{
+.imgJuice4{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://loja.cestasurpresa.com/wp-content/uploads/91421_2.jpg');
+    background-position: center;
+    background-size: 17em;
+    background-repeat: no-repeat;
+}
+
+.imgJuice5{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://m.media-amazon.com/images/I/71eC76jOlpL._AC_UF1000,1000_QL80_.jpg');
+    background-position: center;
+    background-size: 9em;
+    background-repeat: no-repeat;
+}
+
+.imgJuice6{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://www.drogariaminasbrasil.com.br/media/product/dc1/refrigerante-fanta-laranja-lata-350ml-6eb.jpg');
+    background-position: center;
+    background-size: 18em;
+    background-repeat: no-repeat;
+}
+
+.descriçãoJuice{
     height: 20em;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,8 @@
     align-items: flex-start;
 }
 
-.rodapeBurger{
+
+.rodapeJuice{
     background-color: #ccc;
     height: 10em;
     display: flex;

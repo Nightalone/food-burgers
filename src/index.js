@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import App from './components/App';
 import './style.css';
 import './burgers.css';
+import './drinks.css';
 
 
 ReactDom.render(<App/>, document.querySelector('#root'))
