@@ -6,6 +6,31 @@
     height: 394px;
 }
 
+@media only screen and (max-width: 426px) {
+    .caixaBurger{
+        margin-top: -36em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30em;
+    }
+
+    .descriçãoBurger{
+        height: 20em;
+        text-align: center;
+        
+    }
+
+    h1{
+        margin: 0 auto ;
+    }
+
+    .rodapeBurger{
+        text-align: center;
+    }
+}
+
 
 .imgBurger1{
     width: 19em;

@@ -14,7 +14,7 @@ function Coca(){
         </nav>
         <section className='caixaJuice'>
 
-          <div className='imgJuice4'></div>
+          <div className='imgJuice4 imgJuice'></div>
 
           <div className='descriçãoJuice'>
             <h1>Coca Cola</h1><br/>

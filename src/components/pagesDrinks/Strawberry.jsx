@@ -14,7 +14,7 @@ function Strawberry(){
         </nav>
         <section className='caixaJuice'>
 
-          <div className='imgJuice1'></div>
+          <div className='imgJuice1 imgJuice'></div>
 
           <div className='descriçãoJuice'>
             <h1>Strawberry juice</h1><br/>

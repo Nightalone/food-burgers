@@ -14,7 +14,7 @@ function Pineapple(){
         </nav>
         <section className='caixaJuice'>
 
-          <div className='imgJuice3'></div>
+          <div className='imgJuice3 imgJuice'></div>
 
           <div className='descriçãoJuice'>
             <h1>Pineapple juice</h1><br/>

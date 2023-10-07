@@ -6,6 +6,31 @@
     height: 394px;
 }
 
+@media only screen and (max-width: 426px) {
+    .caixaDessert{
+        margin-top: -36em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30em;
+    }
+
+    .descriçãoDessert{
+        height: 20em;
+        text-align: center;
+        
+    }
+
+    h1{
+        margin: 0 auto ;
+    }
+
+    .rodapeDessert{
+        text-align: center;
+    }
+}
+
 
 .imgDessert1{
     width: 19em;

@@ -14,7 +14,7 @@ function Fanta(){
         </nav>
         <section className='caixaJuice'>
 
-          <div className='imgJuice6'></div>
+          <div className='imgJuice6 imgJuice'></div>
 
           <div className='descriçãoJuice'>
             <h1>Orange Fanta</h1><br/>

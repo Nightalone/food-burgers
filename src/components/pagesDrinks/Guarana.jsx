@@ -14,7 +14,7 @@ function Guarana(){
         </nav>
         <section className='caixaJuice'>
 
-          <div className='imgJuice5'></div>
+          <div className='imgJuice5 imgJuice'></div>
 
           <div className='descriçãoJuice'>
             <h1>Guarana</h1><br/>
