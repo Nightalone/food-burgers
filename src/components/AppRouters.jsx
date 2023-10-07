@@ -12,7 +12,14 @@ import Orange from './pagesDrinks/Orange';
 import Pineapple from './pagesDrinks/Pineapple';
 import Coca from './pagesDrinks/Coca';
 import Guarana from './pagesDrinks/Guarana';
-import Fanta from './pagesDrinks/Fanta'
+import Fanta from './pagesDrinks/Fanta';
+import Desserts from './Desserts';
+import Banana from './pagesDesserts/Banana';
+import Cake from './pagesDesserts/Cake';
+import Milk from './pagesDesserts/Milk';
+import Mousse from './pagesDesserts/Mousse';
+import IceCream from './pagesDesserts/IceCream';
+import Banoffee from './pagesDesserts/Banoffee';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -34,7 +41,14 @@ function AppRouters(){
                     <Route path='/pineapple' element={ <Pineapple /> }></Route>
                     <Route path='/coca' element={ <Coca /> }></Route>
                     <Route path='/guarana' element={ <Guarana /> }></Route>
-                    <Route path='/fanta' element={ <Fanta /> }></Route>        
+                    <Route path='/fanta' element={ <Fanta /> }></Route>
+                    <Route path='/desserts' element={ <Desserts /> }></Route>
+                    <Route path='/banana' element={ <Banana /> }></Route> 
+                    <Route path='/cake' element={ <Cake /> }></Route>   
+                    <Route path='/milk' element={ <Milk /> }></Route>  
+                    <Route path='/mousse' element={ <Mousse /> }></Route> 
+                    <Route path='/ice-cream' element={ <IceCream /> }></Route>
+                    <Route path='/banoffee' element={ <Banoffee /> }></Route>
                 </Routes>
             </Router>
         </div>

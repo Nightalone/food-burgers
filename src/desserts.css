@@ -1,0 +1,79 @@
+.caixaDessert{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 394px;
+}
+
+
+.imgDessert1{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://media.istockphoto.com/id/89892107/pt/foto/banana-guarnecida.jpg?s=612x612&w=0&k=20&c=LFatzBYbH_Yxaov8FpufU6TwPfeVNFGiwoM4suUmXMM=');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.imgDessert2{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://vivalivrealimentos.com.br/wp-content/uploads/2018/03/torta-confeitada-morango-com-chocolate.jpg');
+    background-position: center;
+    background-size: 20em;
+    background-repeat: no-repeat;
+}
+
+.imgDessert3{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://media.istockphoto.com/id/477812740/pt/foto/batido-de-leite-com-morango-com-morango-e-frutas-em-branco-pano-de-fundo.jpg?s=170667a&w=0&k=20&c=PPPeJhaRfWPc3DPtM1irPZKj3jk6yCV-0TEyxwGJVWQ=');
+    background-position: center;
+    background-size: 15em;
+    background-repeat: no-repeat;
+}
+
+.imgDessert4{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://receitasdepesos.com.br/wp-content/uploads/2022/11/16h-3.jpg');
+    background-position: center;
+    background-size: 21em;
+    background-repeat: no-repeat;
+}
+
+.imgDessert5{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://media.istockphoto.com/id/931702864/pt/foto/chocolate-ice-cream-in-a-glass-bowl.jpg?s=612x612&w=0&k=20&c=Yl3vTOWHI0GuSxqkcN8ESaC-INTMqXRgpGMamCtTs0c=');
+    background-position: center;
+    background-size: 21em;
+    background-repeat: no-repeat;
+}
+
+.imgDessert6{
+    width: 19em;
+    height: 19em;
+    background-image: url('https://media.istockphoto.com/id/1371122734/pt/foto/banana-coffee-pudding-with-caramelize-bananas-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=WL-hwL4AOoVI5M8U0VvWlWYdyUC23-2mo6Ie3wGFz_4=');
+    background-position: center;
+    background-size: 21em;
+    background-repeat: no-repeat;
+}
+
+.descriçãoDessert{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.rodapeDessert{
+    background-color: #ccc;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
