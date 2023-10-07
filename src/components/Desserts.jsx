@@ -43,8 +43,8 @@ function Desserts(){
           <Product nome='Milk Shake' classN='img15' link='/milk' price='US$ 3.00'/>
         </div>
         <div className='container'>
-          <Product nome='Chocolate mousse' classN='img16' link='/mousse' price='US$ 2.00'/>
-          <Product nome='Chocolate ice cream' classN='img17' link='/ice-cream' price='US$ 2.00'/>
+          <Product nome='Mousse' classN='img16' link='/mousse' price='US$ 2.00'/>
+          <Product nome='Ice cream' classN='img17' link='/ice-cream' price='US$ 2.00'/>
           <Product nome='Banoffee' classN='img18' link='/banoffee' price='US$ 3.00'/>
         </div>
       </section>

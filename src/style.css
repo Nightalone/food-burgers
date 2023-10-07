@@ -135,14 +135,12 @@ section{
     }
 
     .container{
-        margin: 2em 0 2em 0;
-        height: 48em; 
+        margin: 4em 0 2em 0;
+        height: 50em; 
     }
 
     .container-img{
-        width: 50em;
         margin-bottom: 4em;
-        width: 90%;
     }
 }
 
