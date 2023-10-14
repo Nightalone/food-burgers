@@ -12,10 +12,14 @@ function Desserts(){
       if(aparecer === 'false'){
         document.querySelector('#itens').classList.remove('limpar1');
         document.querySelector('#searc').classList.remove('limpar2');
+        document.querySelector("#navegar").style.height = '300px'
+        document.querySelector("#navegar").style.transition = '1s'
         setAparecer('true')
       }else{
         document.querySelector('#itens').classList.add('limpar1');
         document.querySelector('#searc').classList.add('limpar2');
+        document.querySelector("#navegar").style.height = '98px'
+        document.querySelector("#navegar").style.transition = '1s'
         setAparecer('false')
       }
     })
@@ -23,7 +27,7 @@ function Desserts(){
 
   return(
     <main>
-      <nav>
+      <nav id='navegar'>
         <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
         <div className='container-menu' id='containe-menu' onClick={clickMenu}><span class="material-symbols-outlined menu">menu</span></div>
         <ul className='limpar1' id='itens'>
