@@ -31,26 +31,38 @@ function Home(){
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else if(valor === 'x-bacon'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else if(valor === 'x-salad'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else if(valor === 'chicken'){
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else if(valor === 'double cheddar'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else if(valor === 'x-everything'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
+      document.querySelector('nav').style.marginBottom = '10em'
+      document.querySelector('section').style.height = '10em'
     }else{
       document.querySelector('#prot1').style.display = 'block';
       document.querySelector('#prot2').style.display = 'block'
@@ -60,6 +72,8 @@ function Home(){
       document.querySelector('#prot6').style.display = 'block'
       document.querySelector('#container1').style.display = 'flex';
       document.querySelector('#container2').style.display = 'flex';
+      document.querySelector('nav').style.marginBottom = '38em'
+      document.querySelector('section').style.height = '34.8rem'
     }
   }
 
