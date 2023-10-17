@@ -18,7 +18,7 @@ function Home(){
       }else{
         document.querySelector('#itens').classList.add('limpar1');
         document.querySelector('#searc').classList.add('limpar2');
-        document.querySelector("#navegar").style.height = '98px'
+        document.querySelector("#navegar").style.height = '140px'
         document.querySelector("#navegar").style.transition = '1s'
         setAparecer('false')
       }
