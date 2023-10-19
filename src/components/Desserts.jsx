@@ -25,43 +25,44 @@ function Desserts(){
 
   function pesquisar(){
     let valor = document.querySelector('#produto').value.toLowerCase();
-    if(valor === 'cheeseburger'){
+    if(valor === 'banana split'){
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
-    }else if(valor === 'x-bacon'){
+    }else if(valor === 'cake'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
-    }else if(valor === 'x-salad'){
+    }else if(valor === 'milk shake'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
-    }else if(valor === 'chicken'){
+    }else if(valor === 'mousse'){
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
-    }else if(valor === 'double cheddar'){
+    }else if(valor === 'ice cream'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
-    }else if(valor === 'x-everything'){
+    }else if(valor === 'banoffee'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
     }else{
+      document.querySelector('#prot1').style.display = 'block';
       document.querySelector('#prot2').style.display = 'block';
       document.querySelector('#prot3').style.display = 'block';
       document.querySelector('#prot4').style.display = 'block';

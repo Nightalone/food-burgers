@@ -64,6 +64,7 @@ function Home(){
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
     }else{
+      document.querySelector('#prot1').style.display = 'block';
       document.querySelector('#prot2').style.display = 'block';
       document.querySelector('#prot3').style.display = 'block';
       document.querySelector('#prot4').style.display = 'block';
