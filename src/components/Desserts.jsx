@@ -2,24 +2,23 @@ import React, { useState, useEffect } from 'react'
 import Product from './Product';
 import { Link } from 'react-router-dom';
 
+
 function Desserts(){
 
-  const  [aparecer, setAparecer] = useState('false')
+  const  [aparecer, setAparecer] = useState(false)
 
   function clickMenu(){
-    setAparecer(() => {
-      if(aparecer === 'false'){
-        document.querySelector('#itens').classList.remove('limpar1');
-        document.querySelector('#searc').classList.remove('limpar2');
-        document.querySelector("#navegar").style.height = '300px'
-        setAparecer('true')
-      }else{
-        document.querySelector('#itens').classList.add('limpar1');
-        document.querySelector('#searc').classList.add('limpar2');
-        document.querySelector("#navegar").style.height = '140px'
-        setAparecer('false')
-      }
-    })
+    if(aparecer == false){
+      document.querySelector('#itens').classList.remove('limpar1');
+      document.querySelector('#searc').classList.remove('limpar2');
+      document.querySelector("#navegar").style.height = '300px'
+      setAparecer(true)
+    }else{
+      document.querySelector('#itens').classList.add('limpar1');
+      document.querySelector('#searc').classList.add('limpar2');
+      document.querySelector("#navegar").style.height = '140px'
+      setAparecer(false)
+    }
   }
 
   function pesquisar(){

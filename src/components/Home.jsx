@@ -5,26 +5,20 @@ import { Link } from 'react-router-dom';
 
 function Home(){
 
-  const  [aparecer, setAparecer] = useState('false')
-
-  
+  const  [aparecer, setAparecer] = useState(false)
 
   function clickMenu(){
-    setAparecer(() => {
-      if(aparecer === 'false'){
+      if(aparecer == false){
         document.querySelector('#itens').classList.remove('limpar1');
         document.querySelector('#searc').classList.remove('limpar2');
         document.querySelector("#navegar").style.height = '300px'
-        
-        setAparecer('true')
+        setAparecer(true)
       }else{
         document.querySelector('#itens').classList.add('limpar1');
         document.querySelector('#searc').classList.add('limpar2');
         document.querySelector("#navegar").style.height = '140px'
-        
-        setAparecer('false')
-      }
-    })
+        setAparecer(false)
+    }
   }
 
   function pesquisar(){
