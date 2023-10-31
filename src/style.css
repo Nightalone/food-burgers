@@ -23,6 +23,22 @@ nav{
     margin-right: 6px;
 }
 
+#add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 2em;
+}
+
+.add-item{
+    display: none;
+}
+
+.add-produto{
+    display: flex;
+}
+
 .container-menu{
     display: none;
 }

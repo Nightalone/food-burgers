@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Product from './Product';
 import { Link } from 'react-router-dom';
-import { useState } from 'react'
 
 function Desserts(){
 
@@ -76,11 +75,34 @@ function Desserts(){
     }
   }
 
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if(localStorage.getItem('num') == undefined){
+      setCount(0)
+    }else{
+      setCount(parseInt(localStorage.getItem('num')))
+    }
+  })
+            
+  function add(){
+    document.getElementById("cart").innerHTML = localStorage.getItem("num");
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    localStorage.setItem('num', count + 1)
+  }
+
   return(
     <main>
       <nav id='navegar' className='nav-mid'>
         <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
-        <div className='container-menu' id='containe-menu' onClick={clickMenu}><span class="material-symbols-outlined menu">menu</span></div>
+        <div className='add-item' id='add'>
+         <span className="material-symbols-outlined">shopping_cart</span>
+         <div className='numero' id='cart'>{count}</div>
+        </div>
+        <div className='container-menu' id='containe-menu' onClick={clickMenu}>
+          <span class="material-symbols-outlined menu">menu</span>
+        </div>
         <ul className='limpar1' id='itens'>
           <Link to='/'><li>Burgers</li></Link>
           <Link to='/drinks'><li>Drinks</li></Link>
@@ -93,14 +115,14 @@ function Desserts(){
       </nav>
       <section>
         <div className='container' id='container1'>
-         <div id='prot1'><Product nome='Banana Split' classN='img13' link='/banana' price='US$ 4.00'/></div>
-         <div id='prot2'><Product nome='Cake' classN='img14' link='/cake' price='US$ 5.00'/></div>
-         <div id='prot3'><Product nome='Milk Shake' classN='img15' link='/milk' price='US$ 3.00'/></div>
+         <div id='prot1'><Product nome='Banana Split' classN='img13' link='/banana' price='US$ 4.00' botao={add}/></div>
+         <div id='prot2'><Product nome='Cake' classN='img14' link='/cake' price='US$ 5.00' botao={add}/></div>
+         <div id='prot3'><Product nome='Milk Shake' classN='img15' link='/milk' price='US$ 3.00' botao={add}/></div>
         </div>
         <div className='container' id='container2'>
-         <div id='prot4'><Product nome='Mousse' classN='img16' link='/mousse' price='US$ 2.00'/></div>
-         <div id='prot5'><Product nome='Ice cream' classN='img17' link='/ice-cream' price='US$ 2.00'/></div>
-         <div id='prot6'><Product nome='Banoffee' classN='img18' link='/banoffee' price='US$ 3.00'/></div>
+         <div id='prot4'><Product nome='Mousse' classN='img16' link='/mousse' price='US$ 2.00' botao={add}/></div>
+         <div id='prot5'><Product nome='Ice cream' classN='img17' link='/ice-cream' price='US$ 2.00' botao={add}/></div>
+         <div id='prot6'><Product nome='Banoffee' classN='img18' link='/banoffee' price='US$ 3.00' botao={add}/></div>
         </div>
       </section>
     </main>
