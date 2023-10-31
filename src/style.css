@@ -104,6 +104,9 @@ section{
 
 @media only screen and (max-width: 426px) {
     
+    nav{
+        position: fixed;
+    }
 
     .nav-mid{
         width: 100%;
