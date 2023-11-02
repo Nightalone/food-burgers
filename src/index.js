@@ -5,6 +5,6 @@ import './style.css';
 import './burgers.css';
 import './drinks.css';
 import './desserts.css';
-
+import './cart.css';
 
 ReactDom.render(<App/>, document.querySelector('#root'))

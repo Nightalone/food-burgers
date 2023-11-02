@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import Product from './Product';
+import Cart from './Cart';
 import { Link } from 'react-router-dom';
 
 
@@ -77,32 +78,36 @@ function Home(){
   const [count, setCount] = useState(0)
 
   useEffect(() => {
+
     if(localStorage.getItem('num') == undefined){
       setCount(0)
     }else{
       setCount(parseInt(localStorage.getItem('num')))
     }
+
   })
             
   function add(){
-    
     document.querySelector("#cart").innerHTML = `${count}`
     setCount(count + 1)
     localStorage.setItem('num', count + 1)
+
   }
 
+
   return(
-    
 
     <main>
       <nav id='navegar' className='nav-mid'>
         <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
         <div className='add-item' id='add'>
-         <span className="material-symbols-outlined">shopping_cart</span>
-         <div className='numero' id='cart'>{count}</div>
+          <Link to='/cart' className='cart'>
+            <span className="material-symbols-outlined">shopping_cart</span>
+            <div className='numero' id='cart'>{count}</div>
+          </Link>
         </div>
         <div className='container-menu' id='containe-menu' onClick={clickMenu}>
-         <span className="material-symbols-outlined menu">menu</span>
+          <span className="material-symbols-outlined menu">menu</span>
         </div>
         <ul className='limpar1' id='itens'>
           <Link to='/'><li>Burgers</li></Link>
@@ -129,5 +134,6 @@ function Home(){
     </main>
   )
 }
+
 
 export default Home;

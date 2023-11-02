@@ -101,8 +101,10 @@ function Drinks(){
       <nav id='navegar' className='nav-mid'>
         <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
         <div className='add-item' id='add'>
-         <span className="material-symbols-outlined">shopping_cart</span>
-         <div className='numero' id='cart'>{count}</div>
+          <Link to='/cart' className='cart'>
+            <span className="material-symbols-outlined">shopping_cart</span>
+            <div className='numero' id='cart'>{count}</div>
+          </Link>
         </div>
         <button onClick={limpar}>Limpar</button>
         <div className='container-menu' id='containe-menu' onClick={clickMenu}>

@@ -20,6 +20,7 @@ import Milk from './pagesDesserts/Milk';
 import Mousse from './pagesDesserts/Mousse';
 import IceCream from './pagesDesserts/IceCream';
 import Banoffee from './pagesDesserts/Banoffee';
+import Cart from './Cart';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -49,6 +50,7 @@ function AppRouters(){
                     <Route path='/mousse' element={ <Mousse /> }></Route> 
                     <Route path='/ice-cream' element={ <IceCream /> }></Route>
                     <Route path='/banoffee' element={ <Banoffee /> }></Route>
+                    <Route path='/cart' element={ <Cart/> }></Route>
                 </Routes>
             </Router>
         </div>

@@ -1,0 +1,21 @@
+.semItens{
+    height: 561px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.limpar0{
+    display: none;
+}
+
+.cheeseburger{
+    width: 100%;
+    height: 8em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9em;
+}

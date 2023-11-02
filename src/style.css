@@ -19,6 +19,12 @@ nav{
     align-items: center;
 }
 
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .material-symbols-outlined{
     margin-right: 6px;
 }
