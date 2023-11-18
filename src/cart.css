@@ -1,3 +1,9 @@
+#caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .semItens{
     height: 561px;
     width: 100%;
@@ -11,11 +17,94 @@
     display: none;
 }
 
+
+.containerCart{
+    height: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caixaBurger{
+    box-shadow: 0 0 6px;
+    width: 50%;
+    height: 120px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaBacon{
+    box-shadow: 0 0 6px;
+    width: 50%;
+    height: 120px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cheeseburger{
-    width: 100%;
-    height: 8em;
+    width: 20%;
+    height: 13em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 9em;
+    background-size: 10em;
+    margin-right: 30px;
+}
+
+.bacon{
+    width: 24%;
+    height: 12em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12em;
+    margin-right: 30px;
+}
+
+.salad{
+    width: 21%;
+    height: 12em;
+    background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15em;
+}
+
+
+h1{
+    margin-right: 18px;
+}
+
+button{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0099ff;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.preco{
+    width: 5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.contar{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

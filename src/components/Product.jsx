@@ -7,7 +7,7 @@ function Product(props){
         <div className='container-img'>
           <Link to={props.link}><div className={props.classN}></div></Link>
           <div className='name'>
-            <h1>{props.nome}</h1>
+            <h1 className='titulo'>{props.nome}</h1>
             <p className='price'>{props.price}</p>
             <span className="material-symbols-outlined car" onClick={props.botao}>add_shopping_cart</span>
           </div>

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Home from './Home';
 
-function Cart(props){
+function Cart(){
 
     const  [aparecer, setAparecer] = useState(false)
 
@@ -19,8 +18,11 @@ function Cart(props){
           setAparecer(false)
       }
     }
-
+    
     const [count, setCount] = useState(0)
+    const [num1 , setNum1] = useState(localStorage.getItem('burger'))
+    const [num2 , setNum2] = useState(localStorage.getItem('x-bacon'))
+    const [num3 , setNum3] = useState(localStorage.getItem('salad'))
 
     useEffect(() => {
       
@@ -32,15 +34,114 @@ function Cart(props){
 
         if(count >= 1){
             document.querySelector('.semItens').classList.add('limpar0')
+    
         }else if(count == 0){
             document.querySelector('.semItens').classList.remove('limpar0')
         }
+    
+        if(num1 >= 1 ){
 
-        
-    })
-              
+            const caixaBurger = document.createElement('div')
+            caixaBurger.classList.add('caixaBurger')     
+            document.querySelector('#caixa').appendChild(caixaBurger)
+           
+            const cheese = document.createElement('div')
+            cheese.classList.add('cheeseburger')     
+            document.querySelector('.caixaBurger').appendChild(cheese)
+    
+            const tit = document.createElement('h1')
+            tit.innerHTML = 'Cheeseburger'
+            document.querySelector('.caixaBurger').appendChild(tit)
+
+            const preco = document.createElement('div')
+            preco.classList.add('preco')
+            preco.innerHTML = 'US$ '+ localStorage.getItem('valorCheese') + '.00'
+            document.querySelector('.caixaBurger').appendChild(preco)
+    
+            const btn1= document.createElement('button')
+            btn1.classList.add('btn0')
+            btn1.innerHTML = '+'
+            document.querySelector(".caixaBurger").appendChild(btn1)
+    
+            const numero = document.createElement('div')
+            numero.classList.add('contar')
+            numero.innerHTML = parseInt(localStorage.getItem('burger'))
+            document.querySelector('.caixaBurger').appendChild(numero)
+    
+            const btn2= document.createElement('button')
+            btn2.classList.add('btn2')
+            btn2.innerHTML = '-'
+            document.querySelector(".caixaBurger").appendChild(btn2) 
  
+            setNum1(0)
+        } 
+        
+        if(num2 >= 1 ){
+     
+            const caixaBacon = document.createElement('div')
+            caixaBacon.classList.add('caixaBacon')     
+            document.querySelector('#caixa').appendChild(caixaBacon)
+           
+            const bacon = document.createElement('div')
+            bacon.classList.add('bacon')     
+            document.querySelector('.caixaBacon').appendChild(bacon)
+    
+            const tit = document.createElement('h1')
+            tit.innerHTML = 'X-Bacon'
+            document.querySelector('.caixaBacon').appendChild(tit)
 
+            const preco = document.createElement('div')
+            preco.classList.add('preco')
+            preco.innerHTML = 'US$ '+ localStorage.getItem('valorBacon') + '.00'
+            document.querySelector('.caixaBacon').appendChild(preco)
+    
+            const btn1= document.createElement('button')
+            btn1.classList.add('btn0')
+            btn1.innerHTML = '+'
+            document.querySelector(".caixaBacon").appendChild(btn1)
+    
+            const numero = document.createElement('div')
+            numero.classList.add('contar')
+            numero.innerHTML = parseInt(localStorage.getItem('x-bacon'))
+            document.querySelector('.caixaBacon').appendChild(numero)
+    
+            const btn2= document.createElement('button')
+            btn2.classList.add('btn2')
+            btn2.innerHTML = '-'
+            document.querySelector(".caixaBacon").appendChild(btn2) 
+ 
+            setNum2(0)
+            
+        }
+
+        if(num3 >= 1 ){
+     
+            const cheese = document.createElement('div')
+            cheese.classList.add('salad')     
+            document.querySelector('#caixa').appendChild(cheese)
+    
+            const tit = document.createElement('h1')
+            tit.innerHTML = 'X-Salad'
+            document.querySelector('#caixa').appendChild(tit)
+    
+            const btn1= document.createElement('button')
+            btn1.innerHTML = '+'
+            document.querySelector("#caixa").appendChild(btn1)
+    
+            const numero = document.createElement('div')
+            numero.classList.add('contar')
+            numero.innerHTML = parseInt(localStorage.getItem('x-bacon'))
+            document.querySelector('#caixa').appendChild(numero)
+    
+            const btn2= document.createElement('button')
+            btn2.innerHTML = '-'
+            document.querySelector("#caixa").appendChild(btn2)
+            
+        }
+
+    })
+        
+    
     return(
         <main>
             
@@ -60,10 +161,8 @@ function Cart(props){
                 </ul>
             </nav>
 
-            <div className='semItens'><h1>No items in shopping cart</h1></div>
-            <div className='container'>
-                <div className='containerFilho'></div>
-            </div>
+            <div className='containerCart' id='caixa'><h1 className='semItens'>No items in shopping cart</h1></div>
+          
 
         </main>
     )

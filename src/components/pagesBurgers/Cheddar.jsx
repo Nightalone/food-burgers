@@ -12,7 +12,7 @@ function Cheddar(){
                     <Link to='/desserts'><li>Desserts</li></Link>
                 </ul>
             </nav>
-            <section className='caixaBurger'>
+            <section className='caixaBurgers'>
 
                 <div className='imgBurger5'></div>
 
