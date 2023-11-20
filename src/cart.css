@@ -72,7 +72,8 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 15em;
+    background-size: 11em;
+    margin-right: 30px;
 }
 
 
@@ -107,4 +108,8 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sumirBurger{
+    display: none;
 }

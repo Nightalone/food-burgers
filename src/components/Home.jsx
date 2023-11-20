@@ -74,12 +74,7 @@ function Home(){
     }
   }
 
-  const [valorb, setValorb ]= useState(0)
-  const [valorBacon, setValorBacon] = useState(0)
   const [count, setCount] = useState(0)
-  const [num1 , setNum1] = useState(0)
-  const [num2 , setNum2] = useState(0)
-  const [num3 , setNum3] = useState(0)
 
   useEffect(() => {
 
@@ -113,15 +108,17 @@ function Home(){
       setNum2(parseInt(localStorage.getItem('x-bacon')))
     }
 
-    if(localStorage.getItem('salad') == undefined){
+    if(localStorage.getItem('x-salad') == undefined){
       setNum3(0)
     }else{
-      setNum3(parseInt(localStorage.getItem('salad')))
+      setNum3(parseInt(localStorage.getItem('x-salad')))
     }
 
   })
-            
-
+    
+  const [num1 , setNum1] = useState(0)
+  const [valorb, setValorb ]= useState(0)
+  
   function add1(){
     document.querySelector("#cart").innerHTML = `${count}`
     setCount(count + 1)
@@ -129,9 +126,11 @@ function Home(){
     setValorb(valorb + 1)
     localStorage.setItem('num', count + 1)
     localStorage.setItem('burger', num1 + 1)
-    localStorage.setItem('valorCheese', valorb + 1)
-    
+    localStorage.setItem('valorCheese', valorb + 1) 
   }
+
+  const [num2 , setNum2] = useState(0)
+  const [valorBacon, setValorBacon] = useState(0)
 
   function add2(){
     document.querySelector("#cart").innerHTML = `${count}`
@@ -143,12 +142,17 @@ function Home(){
     localStorage.setItem('valorBacon', valorBacon + 2)
   }
 
+  const [num3 , setNum3] = useState(0)
+  const [valorSalad, setValorSalad] = useState(0)
+
   function add3(){
     document.querySelector("#cart").innerHTML = `${count}`
     setCount(count + 1)
     setNum2(num3 + 1)
+    setValorSalad(valorSalad + 2)
     localStorage.setItem('num', count + 1)
-    localStorage.setItem('salad', num2 + 1)
+    localStorage.setItem('x-salad', num3 + 1)
+    localStorage.setItem('valorSalad', valorSalad + 2)
   }
 
   function add4(){
