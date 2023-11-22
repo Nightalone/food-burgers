@@ -82,14 +82,31 @@ function Drinks(){
     }else{
       setCount(parseInt(localStorage.getItem('num')))
     }
+
+    if(localStorage.getItem('valorStrawberry') == undefined){
+      setValorStrawberry(0)
+    }else{
+      setValorStrawberry(parseInt(localStorage.getItem('valorStrawberry')))
+    }
+
+    if(localStorage.getItem('strawberry') == undefined){
+      setNum7(0)
+    }else{
+      setNum7(parseInt(localStorage.getItem('strawberry')))
+    }
   })
             
-  function add(){
-    document.getElementById("cart").innerHTML = localStorage.getItem("num");
-      document.querySelector("#cart").innerHTML = `${count}`
-      setCount(count + 1)
-      localStorage.setItem('num', count + 1) 
-      
+  const [num7 , setNum7] = useState(0)
+  const [valorStrawberry, setValorStrawberry ]= useState(0)
+  
+  function add7(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum7(num7 + 1)
+    setValorStrawberry(valorStrawberry + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('strawberry', num7 + 1)
+    localStorage.setItem('valorStrawberry', valorStrawberry + 2) 
   }
 
   return(
@@ -117,14 +134,14 @@ function Drinks(){
       </nav>
       <section>
         <div className='container' id='container1'>
-          <div id='prot1'><Product nome='Strawberry juice' classN='img7' link='/strawberry' price='US$ 2.00' botao={add}/></div>
-          <div id='prot2'><Product nome='Orange juice' classN='img8' link='/orange' price='US$ 2.00' botao={add}/></div>
-          <div id='prot3'><Product nome='Pineapple juice' classN='img9' link='/pineapple' price='US$ 2.00' botao={add}/></div>
+          <div id='prot1'><Product nome='Strawberry juice' classN='img7' link='/strawberry' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot2'><Product nome='Orange juice' classN='img8' link='/orange' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot3'><Product nome='Pineapple juice' classN='img9' link='/pineapple' price='US$ 2.00' botao={add7}/></div>
         </div>
         <div className='container' id='container2'>
-          <div id='prot4'><Product nome='Coca Cola' classN='img10' link='/coca' price='US$ 2.00' botao={add}/></div>
-          <div id='prot5'><Product nome='Guarana' classN='img11' link='/guarana' price='US$ 2.00' botao={add}/></div>
-          <div id='prot6'><Product nome='Fanta' classN='img12' link='/fanta' price='US$ 2.00' botao={add}/></div>
+          <div id='prot4'><Product nome='Coca Cola' classN='img10' link='/coca' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot5'><Product nome='Guarana' classN='img11' link='/guarana' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot6'><Product nome='Fanta' classN='img12' link='/fanta' price='US$ 2.00' botao={add7}/></div>
         </div>
       </section>
     </main>

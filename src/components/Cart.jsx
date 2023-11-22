@@ -9,12 +9,12 @@ function Cart(){
         if(aparecer == false){
           document.querySelector('#itens').classList.remove('limpar1');
           document.querySelector('#searc').classList.remove('limpar2');
-          document.querySelector("#navegar").style.height = '300px'
+          document.querySelector("#navegar").style.height = '350px'
           setAparecer(true)
         }else{
           document.querySelector('#itens').classList.add('limpar1');
           document.querySelector('#searc').classList.add('limpar2');
-          document.querySelector("#navegar").style.height = '140px'
+          document.querySelector("#navegar").style.height = '190px'
           setAparecer(false)
       }
     }
@@ -59,12 +59,17 @@ function Cart(){
         if(localStorage.getItem('everything') == undefined || localStorage.getItem('everything') == 0){
             document.querySelector('#everything').setAttribute('class', 'sumirBurger')
         }
+
+        if(localStorage.getItem('strawberry') == undefined || localStorage.getItem('strawberry') == 0){
+            document.querySelector('#strawberry').setAttribute('class', 'sumirBurger')
+        }
      
         if(valorTotal == 0){
             document.querySelector('#total').setAttribute('class', 'sumirBurger')
         }else{
             setValorTotal(
-                valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything
+                valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything +
+                valorStrawberry
             )
         }
 
@@ -247,9 +252,39 @@ function Cart(){
             document.querySelector('#everything').setAttribute('class', 'sumirBurger')
         }
     }
+
+    const [valorStrawberry, setValorStrawberry] = useState(parseInt(localStorage.getItem('valorStrawberry')) || 0)
+    const [num7 , setNum7] = useState(parseInt(localStorage.getItem('strawberry')))
+
+    function somar7(){
+        setCount(count + 1)
+        localStorage.setItem('num', count + 1)
+
+        setValorStrawberry(valorStrawberry + 2)
+        localStorage.setItem('valorStrawberry',valorStrawberry + 2)
+
+        setNum7(num7 + 1)
+        localStorage.setItem('strawberry', num7 + 1)
+    }
+
+    function subtrair7(){
+        setCount(count + 1)
+        localStorage.setItem('num', count - 1)
+
+        setValorStrawberry(valorStrawberry - 2)
+        localStorage.setItem('valorStrawberry', valorStrawberry - 2)
+
+        setNum7(num7 - 1)
+        localStorage.setItem('strawberry', num7 - 1)
+
+        if(parseInt(localStorage.getItem('strawberry')) == 0){
+            document.querySelector('#strawberry').setAttribute('class', 'sumirBurger')
+        }
+    }
     
     const [valorTotal, setValorTotal] = useState(
-        parseInt(valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything)
+        parseInt(valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything +
+            valorStrawberry)
         ) 
 
     function limparDados(){
@@ -260,6 +295,7 @@ function Cart(){
         document.querySelector('#chicken').setAttribute('class', 'sumirBurger')
         document.querySelector('#cheddar').setAttribute('class', 'sumirBurger')
         document.querySelector('#everything').setAttribute('class', 'sumirBurger')
+        document.querySelector('#strawberry').setAttribute('class', 'sumirBurger')
         document.querySelector('#total').setAttribute('class', 'sumirBurger')
         setCount(0)
         alert('Purchase completed!')
@@ -326,7 +362,7 @@ function Cart(){
 
                 <div className='caixaBurger' id='cheddar'>
                     <div className='cheddar'></div>
-                    <h1>Cheddar</h1>
+                    <h1>Double Cheddar</h1>
                     <div className='preco'>US$ {valorCheddar}.00</div>
                     <button className='btn0' onClick={somar5}>+</button>
                     <div className='contar'>{parseInt(localStorage.getItem('cheddar'))}</div>
@@ -340,6 +376,15 @@ function Cart(){
                     <button className='btn0' onClick={somar6}>+</button>
                     <div className='contar'>{parseInt(localStorage.getItem('everything'))}</div>
                     <button className='btn2' onClick={subtrair6}>-</button>
+                </div> 
+
+                <div className='caixaBurger' id='strawberry'>
+                    <div className='strawberry'></div>
+                    <h1>Strawberry Juice</h1>
+                    <div className='preco'>US$ {valorStrawberry}.00</div>
+                    <button className='btn0' onClick={somar7}>+</button>
+                    <div className='contar'>{parseInt(localStorage.getItem('strawberry'))}</div>
+                    <button className='btn2' onClick={subtrair7}>-</button>
                 </div> 
 
                 <div className='containerTotal' id='total'>

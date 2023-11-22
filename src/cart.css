@@ -57,7 +57,7 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 10em;
+    background-size: 8em;
     margin-right: 30px;
 }
 
@@ -67,7 +67,7 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 12em;
+    background-size: 10em;
     margin-right: 30px;
 }
 
@@ -77,7 +77,7 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 11em;
+    background-size: 10em;
     margin-right: 30px;
 }
 
@@ -87,7 +87,7 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 9em;
+    background-size: 8em;
     margin-right: 30px;
 }
 
@@ -97,7 +97,7 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 9em;
+    background-size: 11em;
     margin-right: 30px;
 }
 
@@ -107,8 +107,17 @@
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br'); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 9em;
+    background-size: 11em;
     margin-right: 30px;
+}
+
+.strawberry{
+    width: 21%;
+    height: 12em;
+    background-image: url('https://static.expressodelivery.com.br/imagens/produtos/106113/180/Expresso-Delivery_0d51e0b279d6344055315a11e8fae7c7.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7em;
 }
 
 h1{
@@ -188,4 +197,96 @@ button:hover{
     border-radius: 5px;
     border: 1px solid #000;
     background-color: #00ff00;
+}
+
+@media only screen and (max-width: 426px) {
+    .caixaBurger{
+        box-shadow: 0 0 6px;
+        width: 80%;
+        height: 290px;
+        border-radius: 60px;
+        text-align: center;
+    } 
+
+    h1{
+        margin: 0 auto;
+    }
+
+    .cheeseburger{
+        width: 100%;
+        height: 10em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 8em;
+        margin: 0 auto;
+    }
+    
+    .bacon{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10em;
+        margin: 0 auto;
+    }
+    
+    .salad{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10em;
+        margin: 0 auto;
+    }
+    
+    .chicken{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 8em;
+        margin: 0 auto;
+    }
+    
+    .cheddar{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 11em;
+        margin: 0 auto;
+    }
+    
+    .everything{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 11em;
+        margin: 0 auto;
+    }
+
+    .strawberry{
+        width: 60%;
+        height: 12em;
+        background-image: url('https://static.expressodelivery.com.br/imagens/produtos/106113/180/Expresso-Delivery_0d51e0b279d6344055315a11e8fae7c7.png'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7em;
+        margin: 0 auto;
+    }
+
+    .btn0{
+        margin-top: 10px;
+    }
+
+    .btn2{
+        margin-bottom: 20px;
+    }
 }
