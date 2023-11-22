@@ -92,10 +92,6 @@ function Drinks(){
       
   }
 
-  function limpar(){
-    localStorage.clear()
-  }
-
   return(
     <main>
       <nav id='navegar' className='nav-mid'>
@@ -106,7 +102,6 @@ function Drinks(){
             <div className='numero' id='cart'>{count}</div>
           </Link>
         </div>
-        <button onClick={limpar}>Limpar</button>
         <div className='container-menu' id='containe-menu' onClick={clickMenu}>
           <span class="material-symbols-outlined menu">menu</span>
         </div>

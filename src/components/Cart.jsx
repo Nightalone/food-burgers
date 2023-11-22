@@ -19,7 +19,7 @@ function Cart(){
       }
     }
     
-    const [count, setCount] = useState(0)  
+    const [count, setCount] = useState(0) 
 
     useEffect(() => {
       
@@ -48,9 +48,31 @@ function Cart(){
             document.querySelector('#xsalad').setAttribute('class', 'sumirBurger')
         }
 
+        if(localStorage.getItem('chicken') == undefined || localStorage.getItem('chicken') == 0){
+            document.querySelector('#chicken').setAttribute('class', 'sumirBurger')
+        }
+
+        if(localStorage.getItem('cheddar') == undefined || localStorage.getItem('cheddar') == 0){
+            document.querySelector('#cheddar').setAttribute('class', 'sumirBurger')
+        }
+
+        if(localStorage.getItem('everything') == undefined || localStorage.getItem('everything') == 0){
+            document.querySelector('#everything').setAttribute('class', 'sumirBurger')
+        }
+     
+        if(valorTotal == 0){
+            document.querySelector('#total').setAttribute('class', 'sumirBurger')
+        }else{
+            setValorTotal(
+                valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything
+            )
+        }
+
+   
+
     })
 
-    const [valorChe, setValorCheese] = useState(parseInt(localStorage.getItem('valorCheese')))
+    const [valorChe, setValorCheese] = useState(parseInt(localStorage.getItem('valorCheese')) || 0)
     const [num1 , setNum1] = useState(parseInt(localStorage.getItem('burger')))
       
     function somar1(){
@@ -81,7 +103,7 @@ function Cart(){
         
     }
 
-    const [valorBacon, setValorBacon] = useState(parseInt(localStorage.getItem('valorBacon')))
+    const [valorBacon, setValorBacon] = useState(parseInt(localStorage.getItem('valorBacon')) || 0)
     const [num2 , setNum2] = useState(parseInt(localStorage.getItem('x-bacon')))
 
     function somar2(){
@@ -110,7 +132,7 @@ function Cart(){
         }
     }
 
-    const [valorSalad, setValorSalad] = useState(parseInt(localStorage.getItem('valorSalad')))
+    const [valorSalad, setValorSalad] = useState(parseInt(localStorage.getItem('valorSalad')) || 0)
     const [num3 , setNum3] = useState(parseInt(localStorage.getItem('x-salad')))
 
     function somar3(){
@@ -138,7 +160,111 @@ function Cart(){
             document.querySelector('#xsalad').setAttribute('class', 'sumirBurger')
         }
     }
+
+    const [valorChicken, setValorChicken] = useState(parseInt(localStorage.getItem('valorChicken')) || 0)
+    const [num4 , setNum4] = useState(parseInt(localStorage.getItem('chicken')))
+
+    function somar4(){
+        setCount(count + 1)
+        localStorage.setItem('num', count + 1)
+
+        setValorChicken(valorChicken + 2)
+        localStorage.setItem('valorChicken',valorChicken + 2)
+
+        setNum4(num4 + 1)
+        localStorage.setItem('chicken', num4 + 1)
+    }
+
+    function subtrair4(){
+        setCount(count + 1)
+        localStorage.setItem('num', count - 1)
+
+        setValorChicken(valorChicken - 2)
+        localStorage.setItem('valorChicken',valorChicken - 2)
+
+        setNum4(num4 - 1)
+        localStorage.setItem('chicken', num4 - 1)
+
+        if(parseInt(localStorage.getItem('chicken')) == 0){
+            document.querySelector('#chicken').setAttribute('class', 'sumirBurger')
+        }
+    }
+
+    const [valorCheddar, setValorCheddar] = useState(parseInt(localStorage.getItem('valorCheddar')) || 0)
+    const [num5 , setNum5] = useState(parseInt(localStorage.getItem('cheddar')))
+
+    function somar5(){
+        setCount(count + 1)
+        localStorage.setItem('num', count + 1)
+
+        setValorCheddar(valorCheddar + 3)
+        localStorage.setItem('valorCheddar',valorCheddar + 3)
+
+        setNum5(num5 + 1)
+        localStorage.setItem('cheddar', num5 + 1)
+    }
+
+    function subtrair5(){
+        setCount(count + 1)
+        localStorage.setItem('num', count - 1)
+
+        setValorCheddar(valorCheddar - 3)
+        localStorage.setItem('valorCheddar',valorCheddar - 3)
+
+        setNum5(num5 - 1)
+        localStorage.setItem('cheddar', num5 - 1)
+
+        if(parseInt(localStorage.getItem('cheddar')) == 0){
+            document.querySelector('#cheddar').setAttribute('class', 'sumirBurger')
+        }
+    }
+
+    const [valorEverything, setValorEverything] = useState(parseInt(localStorage.getItem('valorEverything')) || 0)
+    const [num6 , setNum6] = useState(parseInt(localStorage.getItem('everything')))
+
+    function somar6(){
+        setCount(count + 1)
+        localStorage.setItem('num', count + 1)
+
+        setValorEverything(valorEverything + 4)
+        localStorage.setItem('valorEverything',valorEverything + 4)
+
+        setNum6(num6 + 1)
+        localStorage.setItem('everything', num6 + 1)
+    }
+
+    function subtrair6(){
+        setCount(count + 1)
+        localStorage.setItem('num', count - 1)
+
+        setValorEverything(valorEverything - 4)
+        localStorage.setItem('valorEverything', valorEverything - 4)
+
+        setNum6(num6 - 1)
+        localStorage.setItem('everything', num6 - 1)
+
+        if(parseInt(localStorage.getItem('everything')) == 0){
+            document.querySelector('#everything').setAttribute('class', 'sumirBurger')
+        }
+    }
     
+    const [valorTotal, setValorTotal] = useState(
+        parseInt(valorChe + valorBacon + valorSalad + valorChicken + valorCheddar + valorEverything)
+        ) 
+
+    function limparDados(){
+        localStorage.clear()
+        document.querySelector('#cheese').setAttribute('class', 'sumirBurger')
+        document.querySelector('#xbacon').setAttribute('class', 'sumirBurger')
+        document.querySelector('#xsalad').setAttribute('class', 'sumirBurger')
+        document.querySelector('#chicken').setAttribute('class', 'sumirBurger')
+        document.querySelector('#cheddar').setAttribute('class', 'sumirBurger')
+        document.querySelector('#everything').setAttribute('class', 'sumirBurger')
+        document.querySelector('#total').setAttribute('class', 'sumirBurger')
+        setCount(0)
+        alert('Purchase completed!')
+    }
+
     return(
         <main>
             
@@ -158,8 +284,9 @@ function Cart(){
                 </ul>
             </nav>
 
-            <div className='containerCart' id='caixa'><h1 className='semItens'>
-                No items in shopping cart</h1>
+            <div className='containerCart' id='caixa'>
+            
+                <h1 className='semItens'>No items in shopping cart</h1>
 
                 <div className='caixaBurger' id='cheese'>
                     <div className='cheeseburger'></div>
@@ -188,8 +315,47 @@ function Cart(){
                     <button className='btn2' onClick={subtrair3}>-</button>
                 </div> 
 
-            </div>
-          
+                <div className='caixaBurger' id='chicken'>
+                    <div className='chicken'></div>
+                    <h1>Chicken</h1>
+                    <div className='preco'>US$ {valorChicken}.00</div>
+                    <button className='btn0' onClick={somar4}>+</button>
+                    <div className='contar'>{parseInt(localStorage.getItem('chicken'))}</div>
+                    <button className='btn2' onClick={subtrair4}>-</button>
+                </div> 
+
+                <div className='caixaBurger' id='cheddar'>
+                    <div className='cheddar'></div>
+                    <h1>Cheddar</h1>
+                    <div className='preco'>US$ {valorCheddar}.00</div>
+                    <button className='btn0' onClick={somar5}>+</button>
+                    <div className='contar'>{parseInt(localStorage.getItem('cheddar'))}</div>
+                    <button className='btn2' onClick={subtrair5}>-</button>
+                </div> 
+
+                <div className='caixaBurger' id='everything'>
+                    <div className='everything'></div>
+                    <h1>X-Everything</h1>
+                    <div className='preco'>US$ {valorEverything}.00</div>
+                    <button className='btn0' onClick={somar6}>+</button>
+                    <div className='contar'>{parseInt(localStorage.getItem('everything'))}</div>
+                    <button className='btn2' onClick={subtrair6}>-</button>
+                </div> 
+
+                <div className='containerTotal' id='total'>
+                    <div className='valorProduto'>
+                        <h2>VALUE OF PRODUCTS</h2>
+                    </div>
+                    <div className='total'>
+                        <h3>Total</h3> 
+                        <h3>US${valorTotal}.00</h3>
+                    </div>
+                    <div className='finalizarCompra'>
+                        <button className='finalizarBotao' onClick={limparDados}>Finalize the purchase</button>
+                    </div>
+                </div>
+
+            </div> 
 
         </main>
     )

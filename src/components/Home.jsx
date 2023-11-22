@@ -108,10 +108,52 @@ function Home(){
       setNum2(parseInt(localStorage.getItem('x-bacon')))
     }
 
+    if(localStorage.getItem('valorSalad') == undefined){
+      setValorSalad(0)
+    }else{
+      setValorSalad(parseInt(localStorage.getItem('valorSalad')))
+    }
+
     if(localStorage.getItem('x-salad') == undefined){
       setNum3(0)
     }else{
       setNum3(parseInt(localStorage.getItem('x-salad')))
+    }
+
+    if(localStorage.getItem('valorChicken') == undefined){
+      setValorChicken(0)
+    }else{
+      setValorChicken(parseInt(localStorage.getItem('valorChicken')))
+    }
+
+    if(localStorage.getItem('chicken') == undefined){
+      setNum4(0)
+    }else{
+      setNum4(parseInt(localStorage.getItem('chicken')))
+    }
+
+    if(localStorage.getItem('valorCheddar') == undefined){
+      setValorCheddar(0)
+    }else{
+      setValorCheddar(parseInt(localStorage.getItem('valorCheddar')))
+    }
+
+    if(localStorage.getItem('cheddar') == undefined){
+      setNum5(0)
+    }else{
+      setNum5(parseInt(localStorage.getItem('cheddar')))
+    }
+
+    if(localStorage.getItem('valorEverything') == undefined){
+      setValorEverything(0)
+    }else{
+      setValorEverything(parseInt(localStorage.getItem('valorEverything')))
+    }
+
+    if(localStorage.getItem('everything') == undefined){
+      setNum6(0)
+    }else{
+      setNum6(parseInt(localStorage.getItem('everything')))
     }
 
   })
@@ -148,23 +190,50 @@ function Home(){
   function add3(){
     document.querySelector("#cart").innerHTML = `${count}`
     setCount(count + 1)
-    setNum2(num3 + 1)
+    setNum3(num3 + 1)
     setValorSalad(valorSalad + 2)
     localStorage.setItem('num', count + 1)
     localStorage.setItem('x-salad', num3 + 1)
     localStorage.setItem('valorSalad', valorSalad + 2)
   }
 
+  const [num4, setNum4] = useState(0)
+  const [valorChicken, setValorChicken] = useState(0)
+
   function add4(){
-    
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum4(num4 + 1)
+    setValorChicken(valorChicken + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('chicken', num4 + 1)
+    localStorage.setItem('valorChicken', valorChicken + 2)
   }
+
+  const [num5, setNum5] = useState(0)
+  const [valorCheddar, setValorCheddar] = useState(0)
 
   function add5(){
-    
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum5(num5 + 1)
+    setValorCheddar(valorCheddar + 3)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('cheddar', num5 + 1)
+    localStorage.setItem('valorCheddar', valorCheddar + 3)
   }
 
+  const [num6, setNum6] = useState(0)
+  const [valorEverything, setValorEverything] = useState(0)
+
   function add6(){
-    
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum6(num6 + 1)
+    setValorEverything(valorEverything + 4)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('everything', num6 + 1)
+    localStorage.setItem('valorEverything', valorEverything + 4)
   }
 
   return(
