@@ -7,14 +7,12 @@ function Cart(){
 
     function clickMenu(){
         if(aparecer == false){
-          document.querySelector('#itens').classList.remove('limpar1');
-          document.querySelector('#searc').classList.remove('limpar2');
-          document.querySelector("#navegar").style.height = '350px'
+          document.querySelector('#itens').removeAttribute('class');
+          document.querySelector("#navegar").style.height = '300px'
           setAparecer(true)
         }else{
-          document.querySelector('#itens').classList.add('limpar1');
-          document.querySelector('#searc').classList.add('limpar2');
-          document.querySelector("#navegar").style.height = '190px'
+          document.querySelector('#itens').setAttribute('class', 'limpar1');
+          document.querySelector("#navegar").style.height = '140px'
           setAparecer(false)
       }
     }
@@ -304,11 +302,13 @@ function Cart(){
     return(
         <main>
             
+        
+
             <nav id='navegar' className='nav-mid'>
                 <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
                 <div className='add-item' id='add'>
                     <span className="material-symbols-outlined">shopping_cart</span>
-                <div className='numero' id='cart'>{ count }</div>
+                    <div className='numero' id='cart'>{count}</div>
                 </div>
                 <div className='container-menu' id='containe-menu' onClick={clickMenu}>
                     <span className="material-symbols-outlined menu">menu</span>

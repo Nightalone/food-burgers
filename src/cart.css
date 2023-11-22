@@ -32,7 +32,7 @@
 
 .caixaBurger{
     box-shadow: 0 0 6px;
-    width: 50%;
+    width: 50em;
     height: 120px;
     border-radius: 60px;
     display: flex;
@@ -200,6 +200,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 426px) {
+    
     .caixaBurger{
         box-shadow: 0 0 6px;
         width: 80%;
@@ -210,6 +211,10 @@ button:hover{
 
     h1{
         margin: 0 auto;
+    }
+
+    .semItens{
+        font-size: 18px;
     }
 
     .cheeseburger{
@@ -284,9 +289,20 @@ button:hover{
 
     .btn0{
         margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .btn2{
         margin-bottom: 20px;
+    }
+
+    #total{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 427px){
+    .caixaBurger{
+        width: 40em;
     }
 }
