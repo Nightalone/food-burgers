@@ -77,18 +77,163 @@ function Desserts(){
   const [count, setCount] = useState(0)
 
   useEffect(() => {
+    
     if(localStorage.getItem('num') == undefined){
       setCount(0)
     }else{
       setCount(parseInt(localStorage.getItem('num')))
     }
+
+    if(localStorage.getItem('valorBana') == undefined){
+      setValorBanana(0)
+    }else{
+      setValorBanana(parseInt(localStorage.getItem('valorBanana')))
+    }
+
+    if(localStorage.getItem('banana') == undefined){
+      setNum13(0)
+    }else{
+      setNum13(parseInt(localStorage.getItem('banana')))
+    }
+
+    if(localStorage.getItem('valorCake') == undefined){
+      setValorCake(0)
+    }else{
+      setValorCake(parseInt(localStorage.getItem('valorCake')))
+    }
+
+    if(localStorage.getItem('cake') == undefined){
+      setNum14(0)
+    }else{
+      setNum14(parseInt(localStorage.getItem('cake')))
+    }
+
+    if(localStorage.getItem('valorMilk') == undefined){
+      setValorMilk(0)
+    }else{
+      setValorMilk(parseInt(localStorage.getItem('valorMilk')))
+    }
+
+    if(localStorage.getItem('milk') == undefined){
+      setNum15(0)
+    }else{
+      setNum15(parseInt(localStorage.getItem('milk')))
+    }
+
+    if(localStorage.getItem('valorMousse') == undefined){
+      setValorMousse(0)
+    }else{
+      setValorMousse(parseInt(localStorage.getItem('valorMousse')))
+    }
+
+    if(localStorage.getItem('mousse') == undefined){
+      setNum16(0)
+    }else{
+      setNum16(parseInt(localStorage.getItem('mousse')))
+    }
+
+    if(localStorage.getItem('valorIce') == undefined){
+      setValorIce(0)
+    }else{
+      setValorIce(parseInt(localStorage.getItem('valorIce')))
+    }
+
+    if(localStorage.getItem('ice') == undefined){
+      setNum17(0)
+    }else{
+      setNum17(parseInt(localStorage.getItem('ice')))
+    }
+
+    if(localStorage.getItem('valorBanoffee') == undefined){
+      setValorBanoffee(0)
+    }else{
+      setValorBanoffee(parseInt(localStorage.getItem('valorBanoffee')))
+    }
+
+    if(localStorage.getItem('banoffee') == undefined){
+      setNum18(0)
+    }else{
+      setNum18(parseInt(localStorage.getItem('banoffee')))
+    }
+
   })
-            
-  function add(){
-    document.getElementById("cart").innerHTML = localStorage.getItem("num");
+
+  const [num13 , setNum13] = useState(0)
+  const [valorBanana, setValorBanana ]= useState(0)
+  
+  function add13(){
     document.querySelector("#cart").innerHTML = `${count}`
     setCount(count + 1)
+    setNum13(num13 + 1)
+    setValorBanana(valorBanana + 4)
     localStorage.setItem('num', count + 1)
+    localStorage.setItem('banana', num13 + 1)
+    localStorage.setItem('valorBanana', valorBanana + 4) 
+  }
+
+  const [num14 , setNum14] = useState(0)
+  const [valorCake, setValorCake] = useState(0)
+
+  function add14(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum14(num14 + 1)
+    setValorCake(valorCake + 5)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('cake', num14 + 1)
+    localStorage.setItem('valorCake', valorCake + 5)
+  }
+
+  const [num15 , setNum15] = useState(0)
+  const [valorMilk, setValorMilk] = useState(0)
+
+  function add15(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum15(num15 + 1)
+    setValorMilk(valorMilk + 3)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('milk', num15 + 1)
+    localStorage.setItem('valorMilk', valorMilk + 3)
+  }
+
+  const [num16, setNum16] = useState(0)
+  const [valorMousse, setValorMousse] = useState(0)
+
+  function add16(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum16(num16 + 1)
+    setValorMousse(valorMousse + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('mousse', num16 + 1)
+    localStorage.setItem('valorMousse', valorMousse + 2)
+  }
+
+  const [num17, setNum17] = useState(0)
+  const [valorIce, setValorIce] = useState(0)
+
+  function add17(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum17(num17 + 1)
+    setValorIce(valorIce + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('ice', num17 + 1)
+    localStorage.setItem('valorIce', valorIce + 2)
+  }
+
+  const [num18, setNum18] = useState(0)
+  const [valorBanoffee, setValorBanoffee] = useState(0)
+
+  function add18(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum18(num18 + 1)
+    setValorBanoffee(valorBanoffee + 3)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('banoffee', num18 + 1)
+    localStorage.setItem('valorBanoffee', valorBanoffee + 3)
   }
 
   return(
@@ -117,14 +262,14 @@ function Desserts(){
       </nav>
       <section>
         <div className='container' id='container1'>
-         <div id='prot1'><Product nome='Banana Split' classN='img13' link='/banana' price='US$ 4.00' botao={add}/></div>
-         <div id='prot2'><Product nome='Cake' classN='img14' link='/cake' price='US$ 5.00' botao={add}/></div>
-         <div id='prot3'><Product nome='Milk Shake' classN='img15' link='/milk' price='US$ 3.00' botao={add}/></div>
+         <div id='prot1'><Product nome='Banana Split' classN='img13' link='/banana' price='US$ 4.00' botao={add13}/></div>
+         <div id='prot2'><Product nome='Cake' classN='img14' link='/cake' price='US$ 5.00' botao={add14}/></div>
+         <div id='prot3'><Product nome='Milk Shake' classN='img15' link='/milk' price='US$ 3.00' botao={add15}/></div>
         </div>
         <div className='container' id='container2'>
-         <div id='prot4'><Product nome='Mousse' classN='img16' link='/mousse' price='US$ 2.00' botao={add}/></div>
-         <div id='prot5'><Product nome='Ice cream' classN='img17' link='/ice-cream' price='US$ 2.00' botao={add}/></div>
-         <div id='prot6'><Product nome='Banoffee' classN='img18' link='/banoffee' price='US$ 3.00' botao={add}/></div>
+         <div id='prot4'><Product nome='Mousse' classN='img16' link='/mousse' price='US$ 2.00' botao={add16}/></div>
+         <div id='prot5'><Product nome='Ice cream' classN='img17' link='/ice-cream' price='US$ 2.00' botao={add17}/></div>
+         <div id='prot6'><Product nome='Banoffee' classN='img18' link='/banoffee' price='US$ 3.00' botao={add18}/></div>
         </div>
       </section>
     </main>

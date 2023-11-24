@@ -179,12 +179,25 @@ section{
 }
 
 @media screen and (max-width: 768px) and (min-width: 427px){
+
+    nav{
+        height: 4em;
+    }
+
     #itens{
         width: 12em;
     }
 
     .container{
         width: 100%;
+    }
+
+    #searc{
+        width: 10em;
+    }
+
+    input{
+        width: 8em;
     }
 }
 

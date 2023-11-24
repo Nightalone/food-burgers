@@ -94,7 +94,68 @@ function Drinks(){
     }else{
       setNum7(parseInt(localStorage.getItem('strawberry')))
     }
+
+    if(localStorage.getItem('valorOrange') == undefined){
+      setValorOrange(0)
+    }else{
+      setValorOrange(parseInt(localStorage.getItem('valorOrange')))
+    }
+
+    if(localStorage.getItem('orange') == undefined){
+      setNum8(0)
+    }else{
+      setNum8(parseInt(localStorage.getItem('orange')))
+    }
+
+    if(localStorage.getItem('valorPineapple') == undefined){
+      setValorPineapple(0)
+    }else{
+      setValorPineapple(parseInt(localStorage.getItem('valorPineapple')))
+    }
+
+    if(localStorage.getItem('pineapple') == undefined){
+      setNum9(0)
+    }else{
+      setNum9(parseInt(localStorage.getItem('pineapple')))
+    }
+
+    if(localStorage.getItem('valorCoca') == undefined){
+      setValorCoca(0)
+    }else{
+      setValorCoca(parseInt(localStorage.getItem('valorCoca')))
+    }
+
+    if(localStorage.getItem('coca') == undefined){
+      setNum10(0)
+    }else{
+      setNum10(parseInt(localStorage.getItem('coca')))
+    }
+
+    if(localStorage.getItem('valorGuarana') == undefined){
+      setValorGuarana(0)
+    }else{
+      setValorGuarana(parseInt(localStorage.getItem('valorGuarana')))
+    }
+
+    if(localStorage.getItem('guarana') == undefined){
+      setNum11(0)
+    }else{
+      setNum11(parseInt(localStorage.getItem('guarana')))
+    }
+
+    if(localStorage.getItem('valorFanta') == undefined){
+      setValorFanta(0)
+    }else{
+      setValorFanta(parseInt(localStorage.getItem('valorFanta')))
+    }
+
+    if(localStorage.getItem('fanta') == undefined){
+      setNum12(0)
+    }else{
+      setNum12(parseInt(localStorage.getItem('fanta')))
+    }
   })
+
             
   const [num7 , setNum7] = useState(0)
   const [valorStrawberry, setValorStrawberry ]= useState(0)
@@ -107,6 +168,71 @@ function Drinks(){
     localStorage.setItem('num', count + 1)
     localStorage.setItem('strawberry', num7 + 1)
     localStorage.setItem('valorStrawberry', valorStrawberry + 2) 
+  }
+
+  const [num8 , setNum8] = useState(0)
+  const [valorOrange, setValorOrange] = useState(0)
+
+  function add8(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum8(num8 + 1)
+    setValorOrange(valorOrange + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('orange', num8 + 1)
+    localStorage.setItem('valorOrange', valorOrange + 2)
+  }
+
+  const [num9 , setNum9] = useState(0)
+  const [valorPineapple, setValorPineapple] = useState(0)
+
+  function add9(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum9(num9 + 1)
+    setValorPineapple(valorPineapple + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('pineapple', num9 + 1)
+    localStorage.setItem('valorPineapple', valorPineapple + 2)
+  }
+
+  const [num10, setNum10] = useState(0)
+  const [valorCoca, setValorCoca] = useState(0)
+
+  function add10(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum10(num10 + 1)
+    setValorCoca(valorCoca + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('coca', num10 + 1)
+    localStorage.setItem('valorCoca', valorCoca + 2)
+  }
+
+  const [num11, setNum11] = useState(0)
+  const [valorGuarana, setValorGuarana] = useState(0)
+
+  function add11(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum11(num11 + 1)
+    setValorGuarana(valorGuarana + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('guarana', num11 + 1)
+    localStorage.setItem('valorGuarana', valorGuarana + 2)
+  }
+
+  const [num12, setNum12] = useState(0)
+  const [valorFanta, setValorFanta] = useState(0)
+
+  function add12(){
+    document.querySelector("#cart").innerHTML = `${count}`
+    setCount(count + 1)
+    setNum12(num12 + 1)
+    setValorFanta(valorFanta + 2)
+    localStorage.setItem('num', count + 1)
+    localStorage.setItem('fanta', num12 + 1)
+    localStorage.setItem('valorFanta', valorFanta + 2)
   }
 
   return(
@@ -135,13 +261,13 @@ function Drinks(){
       <section>
         <div className='container' id='container1'>
           <div id='prot1'><Product nome='Strawberry juice' classN='img7' link='/strawberry' price='US$ 2.00' botao={add7}/></div>
-          <div id='prot2'><Product nome='Orange juice' classN='img8' link='/orange' price='US$ 2.00' botao={add7}/></div>
-          <div id='prot3'><Product nome='Pineapple juice' classN='img9' link='/pineapple' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot2'><Product nome='Orange juice' classN='img8' link='/orange' price='US$ 2.00' botao={add8}/></div>
+          <div id='prot3'><Product nome='Pineapple juice' classN='img9' link='/pineapple' price='US$ 2.00' botao={add9}/></div>
         </div>
         <div className='container' id='container2'>
-          <div id='prot4'><Product nome='Coca Cola' classN='img10' link='/coca' price='US$ 2.00' botao={add7}/></div>
-          <div id='prot5'><Product nome='Guarana' classN='img11' link='/guarana' price='US$ 2.00' botao={add7}/></div>
-          <div id='prot6'><Product nome='Fanta' classN='img12' link='/fanta' price='US$ 2.00' botao={add7}/></div>
+          <div id='prot4'><Product nome='Coca Cola' classN='img10' link='/coca' price='US$ 2.00' botao={add10}/></div>
+          <div id='prot5'><Product nome='Guarana' classN='img11' link='/guarana' price='US$ 2.00' botao={add11}/></div>
+          <div id='prot6'><Product nome='Fanta' classN='img12' link='/fanta' price='US$ 2.00' botao={add12}/></div>
         </div>
       </section>
     </main>
