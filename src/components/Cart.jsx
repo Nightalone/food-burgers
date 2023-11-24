@@ -698,162 +698,198 @@ function Cart(){
                     <div className='cheeseburger'></div>
                     <h1>Cheeseburger</h1>
                     <div className='preco'>US$ {valorChe}.00</div>
-                    <button className='btn0' onClick={somar1}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('burger'))}</div>
-                    <button className='btn2' onClick={subtrair1}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar1}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('burger'))}</div>
+                        <button className='btn2' onClick={subtrair1}>-</button>
+                    </div>
                 </div>    
 
                 <div className='caixaBurger' id='xbacon'>
                     <div className='bacon'></div>
                     <h1>X-Bacon</h1>
                     <div className='preco'>US$ {valorBacon}.00</div>
-                    <button className='btn0' onClick={somar2}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('x-bacon'))}</div>
-                    <button className='btn2' onClick={subtrair2}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar2}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('x-bacon'))}</div>
+                        <button className='btn2' onClick={subtrair2}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='xsalad'>
                     <div className='salad'></div>
                     <h1>X-Salad</h1>
                     <div className='preco'>US$ {valorSalad}.00</div>
-                    <button className='btn0' onClick={somar3}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('x-salad'))}</div>
-                    <button className='btn2' onClick={subtrair3}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar3}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('x-salad'))}</div>
+                        <button className='btn2' onClick={subtrair3}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='chicken'>
                     <div className='chicken'></div>
                     <h1>Chicken</h1>
                     <div className='preco'>US$ {valorChicken}.00</div>
-                    <button className='btn0' onClick={somar4}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('chicken'))}</div>
-                    <button className='btn2' onClick={subtrair4}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar4}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('chicken'))}</div>
+                        <button className='btn2' onClick={subtrair4}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='cheddar'>
                     <div className='cheddar'></div>
                     <h1>Double Cheddar</h1>
                     <div className='preco'>US$ {valorCheddar}.00</div>
-                    <button className='btn0' onClick={somar5}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('cheddar'))}</div>
-                    <button className='btn2' onClick={subtrair5}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar5}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('cheddar'))}</div>
+                        <button className='btn2' onClick={subtrair5}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='everything'>
                     <div className='everything'></div>
                     <h1>X-Everything</h1>
                     <div className='preco'>US$ {valorEverything}.00</div>
-                    <button className='btn0' onClick={somar6}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('everything'))}</div>
-                    <button className='btn2' onClick={subtrair6}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar6}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('everything'))}</div>
+                        <button className='btn2' onClick={subtrair6}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='strawberry'>
                     <div className='strawberry'></div>
                     <h1>Strawberry Juice</h1>
                     <div className='preco'>US$ {valorStrawberry}.00</div>
-                    <button className='btn0' onClick={somar7}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('strawberry'))}</div>
-                    <button className='btn2' onClick={subtrair7}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar7}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('strawberry'))}</div>
+                        <button className='btn2' onClick={subtrair7}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='orange'>
                     <div className='orange'></div>
                     <h1>Orange Juice</h1>
                     <div className='preco'>US$ {valorOrange}.00</div>
-                    <button className='btn0' onClick={somar8}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('orange'))}</div>
-                    <button className='btn2' onClick={subtrair8}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar8}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('orange'))}</div>
+                        <button className='btn2' onClick={subtrair8}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='pineapple'>
                     <div className='pineapple'></div>
                     <h1>Pineapple Juice</h1>
                     <div className='preco'>US$ {valorPineapple}.00</div>
-                    <button className='btn0' onClick={somar9}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('pineapple'))}</div>
-                    <button className='btn2' onClick={subtrair9}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar9}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('pineapple'))}</div>
+                        <button className='btn2' onClick={subtrair9}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='coca'>
                     <div className='coca'></div>
                     <h1>Coca Cola</h1>
                     <div className='preco'>US$ {valorCoca}.00</div>
-                    <button className='btn0' onClick={somar10}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('coca'))}</div>
-                    <button className='btn2' onClick={subtrair10}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar10}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('coca'))}</div>
+                        <button className='btn2' onClick={subtrair10}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='guarana'>
                     <div className='guarana'></div>
                     <h1>Guarana</h1>
                     <div className='preco'>US$ {valorGuarana}.00</div>
-                    <button className='btn0' onClick={somar11}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('guarana'))}</div>
-                    <button className='btn2' onClick={subtrair11}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar11}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('guarana'))}</div>
+                        <button className='btn2' onClick={subtrair11}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='fanta'>
                     <div className='fanta'></div>
                     <h1>Fanta</h1>
                     <div className='preco'>US$ {valorFanta}.00</div>
-                    <button className='btn0' onClick={somar12}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('fanta'))}</div>
-                    <button className='btn2' onClick={subtrair12}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar12}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('fanta'))}</div>
+                        <button className='btn2' onClick={subtrair12}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='banana'>
                     <div className='banana'></div>
                     <h1>Banana Split</h1>
                     <div className='preco'>US$ {valorBanana}.00</div>
-                    <button className='btn0' onClick={somar13}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('banana'))}</div>
-                    <button className='btn2' onClick={subtrair13}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar13}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('banana'))}</div>
+                        <button className='btn2' onClick={subtrair13}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='cake'>
                     <div className='cake'></div>
                     <h1>Cake</h1>
                     <div className='preco'>US$ {valorCake}.00</div>
-                    <button className='btn0' onClick={somar14}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('cake'))}</div>
-                    <button className='btn2' onClick={subtrair14}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar14}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('cake'))}</div>
+                        <button className='btn2' onClick={subtrair14}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='milk'>
                     <div className='milk'></div>
                     <h1>Milk Shake</h1>
                     <div className='preco'>US$ {valorMilk}.00</div>
-                    <button className='btn0' onClick={somar15}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('milk'))}</div>
-                    <button className='btn2' onClick={subtrair15}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar15}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('milk'))}</div>
+                        <button className='btn2' onClick={subtrair15}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='mousse'>
                     <div className='mousse'></div>
                     <h1>Mousse</h1>
                     <div className='preco'>US$ {valorMousse}.00</div>
-                    <button className='btn0' onClick={somar16}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('mousse'))}</div>
-                    <button className='btn2' onClick={subtrair16}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar16}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('mousse'))}</div>
+                        <button className='btn2' onClick={subtrair16}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='ice'>
                     <div className='ice'></div>
                     <h1>Ice Cream</h1>
                     <div className='preco'>US$ {valorIce}.00</div>
-                    <button className='btn0' onClick={somar17}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('ice'))}</div>
-                    <button className='btn2' onClick={subtrair17}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar17}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('ice'))}</div>
+                        <button className='btn2' onClick={subtrair17}>-</button>
+                    </div>
                 </div> 
 
                 <div className='caixaBurger' id='banoffee'>
                     <div className='banoffee'></div>
                     <h1>Banoffee</h1>
                     <div className='preco'>US$ {valorBanoffee}.00</div>
-                    <button className='btn0' onClick={somar18}>+</button>
-                    <div className='contar'>{parseInt(localStorage.getItem('banoffee'))}</div>
-                    <button className='btn2' onClick={subtrair18}>-</button>
+                    <div className='botoes'>
+                        <button className='btn0' onClick={somar18}>+</button>
+                        <div className='contar'>{parseInt(localStorage.getItem('banoffee'))}</div>
+                        <button className='btn2' onClick={subtrair18}>-</button>
+                    </div>
                 </div> 
 
                 <div className='containerTotal' id='total'>
