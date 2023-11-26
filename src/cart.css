@@ -235,6 +235,10 @@ button:hover{
     margin-right: 14px;
 }
 
+.botoes{
+    display: flex;
+}
+
 .contar{
     width: 2em;
     height: 2em;
@@ -289,7 +293,7 @@ button:hover{
     background-color: #00ff00;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 624px) {
     
     .caixaBurger{
         box-shadow: 0 0 6px;
@@ -433,7 +437,7 @@ button:hover{
         background-image: url('https://media.istockphoto.com/id/89892107/pt/foto/banana-guarnecida.jpg?s=612x612&w=0&k=20&c=LFatzBYbH_Yxaov8FpufU6TwPfeVNFGiwoM4suUmXMM='); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 7em;
+        background-size: 9em;
     }
     
     .cake{
@@ -442,7 +446,7 @@ button:hover{
         background-image: url('https://vivalivrealimentos.com.br/wp-content/uploads/2018/03/torta-confeitada-morango-com-chocolate.jpg'); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 7em;
+        background-size: 9em;
     }
     
     .milk{
@@ -451,7 +455,7 @@ button:hover{
         background-image: url('https://media.istockphoto.com/id/477812740/pt/foto/batido-de-leite-com-morango-com-morango-e-frutas-em-branco-pano-de-fundo.jpg?s=170667a&w=0&k=20&c=PPPeJhaRfWPc3DPtM1irPZKj3jk6yCV-0TEyxwGJVWQ='); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 5em;
+        background-size: 7em;
     }
     
     .mousse{
@@ -460,7 +464,7 @@ button:hover{
         background-image: url('https://receitasdepesos.com.br/wp-content/uploads/2022/11/16h-3.jpg'); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 8em;
+        background-size: 10em;
     }
     
     .ice{
@@ -469,7 +473,7 @@ button:hover{
         background-image: url('https://media.istockphoto.com/id/931702864/pt/foto/chocolate-ice-cream-in-a-glass-bowl.jpg?s=612x612&w=0&k=20&c=Yl3vTOWHI0GuSxqkcN8ESaC-INTMqXRgpGMamCtTs0c='); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 6.5em;
+        background-size: 9em;
     }
     
     .banoffee{
@@ -478,7 +482,7 @@ button:hover{
         background-image: url('https://media.istockphoto.com/id/1371122734/pt/foto/banana-coffee-pudding-with-caramelize-bananas-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=WL-hwL4AOoVI5M8U0VvWlWYdyUC23-2mo6Ie3wGFz_4='); 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 8em;
+        background-size: 10em;
     }
 
     .btn0{
@@ -495,8 +499,187 @@ button:hover{
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 427px){
+@media screen and (max-width: 815px) and (min-width: 624px){
+    #navegar{
+        width: 100%;
+    }
+    
+
     .caixaBurger{
-        width: 40em;
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    h1{
+        font-size: 90%;
+        margin: 0px;
+    }
+
+   
+
+    .cheeseburger{
+        width: 80px;
+        height: 9em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5em;
+    }
+    
+    .bacon{
+        width: 80px;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6em;
+    }
+    
+    .salad{
+        width: 80px;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7em;
+    }
+    
+    .chicken{
+        width: 80px;
+        height: 12em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5em;
+    }
+    
+    .cheddar{
+        width: 80px;
+        height: 6em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6em;
+    }
+    
+    .everything{
+        width: 80px;
+        height: 6em;
+        background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6em;
+    }
+
+    .strawberry{
+        width: 50px;
+        height: 4.2em;
+        background-image: url('https://static.expressodelivery.com.br/imagens/produtos/106113/180/Expresso-Delivery_0d51e0b279d6344055315a11e8fae7c7.png'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4.2em;
+    }
+
+    .orange{
+        width: 70px;
+        height: 6em;
+        background-image: url('https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/c65526b6-458d-4cb5-9550-6d6a4f098846/da1e9ff7-945d-487d-b91d-688bc1cb8a45.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4.5em;
+    }
+    
+    .pineapple{
+        width: 64px;
+        height: 6em;
+        background-image: url('https://atm-accounts.s3-sa-east-1.amazonaws.com/54/files/thumbs/svorpceozu7ekv8n6atp-large.jpeg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4.3em;
+    }
+    
+    .coca{
+        width: 50px;
+        height: 6em;
+        background-image: url('https://loja.cestasurpresa.com/wp-content/uploads/91421_2.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5em;
+    }
+    
+    .guarana{
+        width: 50px;
+        height: 6em;
+        background-image: url('https://m.media-amazon.com/images/I/71eC76jOlpL._AC_UF1000,1000_QL80_.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.8em;
+    }
+    
+    .fanta{
+        width: 50px;
+        height: 6em;
+        background-image: url('https://www.drogariaminasbrasil.com.br/media/product/dc1/refrigerante-fanta-laranja-lata-350ml-6eb.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5.5em;
+      
+    }
+
+    .banana{
+        width: 100px;
+        height: 6em;
+        background-image: url('https://media.istockphoto.com/id/89892107/pt/foto/banana-guarnecida.jpg?s=612x612&w=0&k=20&c=LFatzBYbH_Yxaov8FpufU6TwPfeVNFGiwoM4suUmXMM='); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5em;
+    }
+    
+    .cake{
+        width: 66px;
+        height: 6em;
+        background-image: url('https://vivalivrealimentos.com.br/wp-content/uploads/2018/03/torta-confeitada-morango-com-chocolate.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5em;
+    }
+    
+    .milk{
+        width: 50px;
+        height: 6em;
+        background-image: url('https://media.istockphoto.com/id/477812740/pt/foto/batido-de-leite-com-morango-com-morango-e-frutas-em-branco-pano-de-fundo.jpg?s=170667a&w=0&k=20&c=PPPeJhaRfWPc3DPtM1irPZKj3jk6yCV-0TEyxwGJVWQ='); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4em;
+    }
+    
+    .mousse{
+
+        width: 70px;
+        height: 6em;
+        background-image: url('https://receitasdepesos.com.br/wp-content/uploads/2022/11/16h-3.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7em;
+        
+    }
+    
+    .ice{
+        width: 50px;
+        height: 5em;
+        background-image: url('https://media.istockphoto.com/id/931702864/pt/foto/chocolate-ice-cream-in-a-glass-bowl.jpg?s=612x612&w=0&k=20&c=Yl3vTOWHI0GuSxqkcN8ESaC-INTMqXRgpGMamCtTs0c='); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6em;
+    }
+    
+    .banoffee{
+        width: 50px;
+        height: 5em;
+        background-image: url('https://media.istockphoto.com/id/1371122734/pt/foto/banana-coffee-pudding-with-caramelize-bananas-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=WL-hwL4AOoVI5M8U0VvWlWYdyUC23-2mo6Ie3wGFz_4='); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7em;
     }
 }

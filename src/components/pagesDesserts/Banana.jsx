@@ -17,7 +17,7 @@ function Banana(){
           <div className='imgDessert1'></div>
 
           <div className='descriçãoDessert'>
-            <h1>Banana Split</h1><br/>
+            <h1 id='titulo'>Banana Split</h1><br/>
             <p>Banana, scoop of chocolate ice cream, cream ice cream ball, scoop of strawberry ice cream, <br/>syrup of your choice, cashew nuts to taste, whipped cream to taste it's 2 cherries.</p>
           </div>
 

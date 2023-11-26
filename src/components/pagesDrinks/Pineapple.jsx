@@ -17,7 +17,7 @@ function Pineapple(){
           <div className='imgJuice3 imgJuice'></div>
 
           <div className='descriçãoJuice'>
-            <h1>Pineapple juice</h1><br/>
+            <h1 id='titulo'>Pineapple juice</h1><br/>
             <p>Pineapple, water, sugar and ice.</p>
           </div>
 

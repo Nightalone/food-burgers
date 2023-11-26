@@ -17,7 +17,7 @@ function Everything(){
                 <div className='imgBurger6'></div>
 
                 <div className='descriçãoBurger'>
-                    <h1>X-Everything</h1><br/>
+                    <h1 id='titulo'>X-Everything</h1><br/>
                     <p>A burger, cheese, barbecue sauce, slices of bacon, tomato, iceberg lettuce, onion, sauce and sesame seed bread.</p>
                 </div>
 

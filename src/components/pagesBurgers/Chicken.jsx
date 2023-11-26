@@ -17,7 +17,7 @@ function Chicken(){
                 <div className='imgBurger4'></div>
 
                 <div className='descriçãoBurger'>
-                    <h1>Chicken</h1><br/>
+                    <h1 id='titulo'>Chicken</h1><br/>
                     <p>Breaded chicken, mayonnaise, iceberg lettuce and sesame seed bread.</p>
                 </div>
 

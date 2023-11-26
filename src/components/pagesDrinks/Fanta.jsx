@@ -17,7 +17,7 @@ function Fanta(){
           <div className='imgJuice6 imgJuice'></div>
 
           <div className='descriçãoJuice'>
-            <h1>Orange Fanta</h1><br/>
+            <h1 id='titulo'>Orange Fanta</h1><br/>
             <p>Carbonated water, sugar, concentrated orange and apple juices, vitamin C, acidity regulators citric acid and sodium citrate,<br/> synthetic flavor identical to natural, sequestrants sodium hexametaphosphate and calcium disodium EDTA.</p>
           </div>
 

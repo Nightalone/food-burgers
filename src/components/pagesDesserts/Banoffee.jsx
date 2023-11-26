@@ -17,7 +17,7 @@ function Banoffee(){
           <div className='imgDessert6'></div>
 
           <div className='descriçãoDessert'>
-            <h1>Banoffee</h1><br/>
+            <h1 id='titulo'>Banoffee</h1><br/>
             <p>Delicious English dessert made with cream and banana caramel, combined with a shortbread crumb base,<br/> finished with a touch of cinnamon and whipped cream.</p>
           </div>
 

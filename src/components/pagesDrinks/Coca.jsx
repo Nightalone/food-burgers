@@ -17,7 +17,7 @@ function Coca(){
           <div className='imgJuice4 imgJuice'></div>
 
           <div className='descriçãoJuice'>
-            <h1>Coca Cola</h1><br/>
+            <h1 id='titulo'>Coca Cola</h1><br/>
             <p>Coca-Cola original flavor contains carbonated water, sugar, kola nut extract, caffeine,<br/> IV caramel coloring, phosphoric acid acidifier and natural flavor.</p>
           </div>
 

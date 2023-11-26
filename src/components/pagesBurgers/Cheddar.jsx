@@ -17,7 +17,7 @@ function Cheddar(){
                 <div className='imgBurger5'></div>
 
                 <div className='descriçãoBurger'>
-                    <h1>Double Cheddar</h1><br/>
+                    <h1 id='titulo'>Double Cheddar</h1><br/>
                     <p>Two burgers, sauce, soy sauce onion and dark sesame seed bun.</p>
                 </div>
 

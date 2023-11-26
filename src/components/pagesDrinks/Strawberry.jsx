@@ -17,7 +17,7 @@ function Strawberry(){
           <div className='imgJuice1 imgJuice'></div>
 
           <div className='descriçãoJuice'>
-            <h1>Strawberry juice</h1><br/>
+            <h1 id='titulo'>Strawberry juice</h1><br/>
             <p>Strawberry, water, sugar and ice.</p>
           </div>
 

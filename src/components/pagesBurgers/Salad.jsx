@@ -17,7 +17,7 @@ function Salad(){
           <div className='imgBurger3'></div>
 
           <div className='descriçãoBurger'>
-            <h1>X-Salad</h1><br/>
+            <h1 id='titulo'>X-Salad</h1><br/>
             <p>A burger, cheese, tomato, iceberg lettuce, onion, sauce and sesame seed bread.</p>
           </div>
 
