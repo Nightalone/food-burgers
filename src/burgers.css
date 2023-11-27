@@ -6,7 +6,7 @@
     height: 394px;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 623px) {
 
     nav{
         height: 140px;
@@ -71,7 +71,7 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kRXV7tWV/200/200/original?country=br');
     background-position: center;
-    background-size: 18em;
+    background-size: 16em;
     background-repeat: no-repeat;
 }
 
@@ -80,8 +80,9 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXjtUHf/200/200/original?country=br');
     background-position: center;
-    background-size: 18em;
+    background-size: 14em;
     background-repeat: no-repeat;
+
 }
 
 .imgBurger3{
@@ -89,7 +90,7 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br');
     background-position: center;
-    background-size: 18em;
+    background-size: 16em;
     background-repeat: no-repeat;
 }
 
@@ -98,7 +99,7 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/200/original?country=br');
     background-position: center;
-    background-size: 17em;
+    background-size: 14em;
     background-repeat: no-repeat;
 }
 
@@ -107,7 +108,7 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXWKJ6A/200/200/original?country=br');
     background-position: center;
-    background-size: 19em;
+    background-size: 16em;
     background-repeat: no-repeat;
 }
 
@@ -116,7 +117,7 @@
     height: 19em;
     background-image: url('https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJXXZSDC/200/200/original?country=br');
     background-position: center;
-    background-size: 18em;
+    background-size: 16em;
     background-repeat: no-repeat;
 }
 
