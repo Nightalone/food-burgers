@@ -11,12 +11,10 @@ function Home(){
       if(aparecer == false){
         document.querySelector('#itens').classList.remove('limpar1');
         document.querySelector('#searc').classList.remove('limpar2');
-        document.querySelector("#navegar").style.height = '300px'
         setAparecer(true)
       }else{
         document.querySelector('#itens').classList.add('limpar1');
         document.querySelector('#searc').classList.add('limpar2');
-        document.querySelector("#navegar").style.height = '140px'
         setAparecer(false)
     }
   }
@@ -29,36 +27,48 @@ function Home(){
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'x-bacon'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'x-salad'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'chicken'){
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'double cheddar'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'x-everything'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else{
       document.querySelector('#prot1').style.display = 'block';
       document.querySelector('#prot2').style.display = 'block';
@@ -70,7 +80,8 @@ function Home(){
       document.querySelector('#container2').style.display = 'flex';
       document.querySelector('nav').classList.remove('nav-small');
       document.querySelector('nav').classList.add('nav-mid');
-      
+      document.querySelector('section').classList.add('sec1');
+      document.querySelector('section').classList.remove('sec2');
     }
   }
 
@@ -240,7 +251,7 @@ function Home(){
 
     <main>
       <nav id='navegar' className='nav-mid'>
-        <h1><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
+        <h1 id='logo'><span class="material-symbols-outlined">fastfood</span>Food Burgers</h1>
         <div className='add-item' id='add'>
           <Link to='/cart' className='cart'>
             <span className="material-symbols-outlined">shopping_cart</span>
@@ -260,7 +271,7 @@ function Home(){
           <span className="material-symbols-outlined search">search</span>
         </div>      
       </nav>
-      <section>
+      <section className='sec1'>
         <div className='container' id='container1'>
           <div id='prot1' className='caixa'><Product nome='Cheeseburger' classN='img1' link='/cheeseburger' price='US$ 1.00' botao={add1}/></div>
           <div id='prot2'><Product nome='X-Bacon' classN='img2' link='/bacon' price='US$ 2.00' botao={add2}/></div>

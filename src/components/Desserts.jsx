@@ -11,12 +11,10 @@ function Desserts(){
     if(aparecer == false){
       document.querySelector('#itens').classList.remove('limpar1');
       document.querySelector('#searc').classList.remove('limpar2');
-      document.querySelector("#navegar").style.height = '300px'
       setAparecer(true)
     }else{
       document.querySelector('#itens').classList.add('limpar1');
       document.querySelector('#searc').classList.add('limpar2');
-      document.querySelector("#navegar").style.height = '140px'
       setAparecer(false)
     }
   }
@@ -29,36 +27,48 @@ function Desserts(){
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'cake'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot3').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'milk shake'){
       document.querySelector('#prot1').style.display = 'none';
       document.querySelector('#prot2').style.display = 'none';
       document.querySelector('#container2').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'mousse'){
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'ice cream'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot6').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else if(valor === 'banoffee'){
       document.querySelector('#prot4').style.display = 'none';
       document.querySelector('#prot5').style.display = 'none';
       document.querySelector('#container1').style.display = 'none';
       document.querySelector('nav').classList.add('nav-small');
       document.querySelector('nav').classList.remove('nav-mid');
+      document.querySelector('section').classList.add('sec2');
+      document.querySelector('section').classList.remove('sec1');
     }else{
       document.querySelector('#prot1').style.display = 'block';
       document.querySelector('#prot2').style.display = 'block';
@@ -70,7 +80,8 @@ function Desserts(){
       document.querySelector('#container2').style.display = 'flex';
       document.querySelector('nav').classList.remove('nav-small');
       document.querySelector('nav').classList.add('nav-mid');
-      
+      document.querySelector('section').classList.add('sec1');
+      document.querySelector('section').classList.remove('sec2');
     }
   }
 
@@ -260,7 +271,7 @@ function Desserts(){
           <span className="material-symbols-outlined search">search</span>
         </div>      
       </nav>
-      <section>
+      <section className='sec1'>
         <div className='container' id='container1'>
          <div id='prot1'><Product nome='Banana Split' classN='img13' link='/banana' price='US$ 4.00' botao={add13}/></div>
          <div id='prot2'><Product nome='Cake' classN='img14' link='/cake' price='US$ 5.00' botao={add14}/></div>

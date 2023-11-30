@@ -9,7 +9,7 @@
 @media only screen and (max-width: 623px) {
 
     nav{
-        height: 140px;
+        height: 14em;
         display: flex;
         flex-direction: column;
         justify-content: center;
