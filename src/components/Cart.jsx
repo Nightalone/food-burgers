@@ -8,11 +8,11 @@ function Cart(){
     function clickMenu(){
         if(aparecer == false){
           document.querySelector('#itens').removeAttribute('class');
-          document.querySelector("#navegar").style.height = '300px'
+          
           setAparecer(true)
         }else{
           document.querySelector('#itens').setAttribute('class', 'limpar1');
-          document.querySelector("#navegar").style.height = '140px'
+          
           setAparecer(false)
       }
     }
