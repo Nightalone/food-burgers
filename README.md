@@ -1,6 +1,6 @@
 # Food Bugers
 
-<p>Utilizamos React, componentes, useState, useEffect e Rotas. No JavaScript usamos manipulação de DOM, funções, estruturas de condições e localstorage.</p>
+<p>Utilizamos React, componentes, useState, useEffect e Rotas. Funções, estruturas de condições e localstorage.</p>
 
 Deploy: https://food-burgers.vercel.app/
 
